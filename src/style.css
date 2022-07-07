@@ -1,0 +1,24 @@
+body {
+    display: grid;
+    grid-template-columns: 50ch auto;
+    grid-template-areas:
+        "search stats"
+        "list stats"
+        "list stats";
+    background-color: #333;
+    color: #FFF;
+}
+
+#search, #stats, #chart {
+    position: fixed;
+}
+
+#search {
+    grid-area: search;
+}
+#list {
+    grid-area: list;
+}
+#stats {
+    grid-area: stats;
+}

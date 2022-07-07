@@ -1,8 +1,10 @@
 <?php
 
 $aConfig = [
+    // Where to read new transactions from
+    "import_file" => "data.csv",
 
-    // List of categories and their search terms to match
+    // List of categories/sub-categories and their search terms to match transactions
     "categories" => [
         "Income" => [
             "Lea"           => ["204115", "patasic"],

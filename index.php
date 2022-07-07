@@ -1,4 +1,4 @@
-<?php require "core/balance.php"; ?>
+<?php require_once "core/balance.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,21 +13,10 @@
 </head>
 <body>
     <input id="search" autocomplete="off" autofocus>
-    <select id="filter">
-        <option selected>All</option>
-    </select>
-    <table>
-        <thead>
-            <tr>
-                <td>Date</td>
-                <td>Memo</td>
-                <td>Amount</td>
-            </tr>
-        </thead>
-        <tbody>
-            <?php foreach(getTransactions() as $oTransaction) include "tpl/entry.php"; ?>
-        </tbody>
-    </table>
+    <ul id="filter">
+        <li></li>
+    </ul>
+    <?php include "tpl/transactions.php"; ?>
     <div id="stats"></div>
     <div id="chart"></div>
 </body>
